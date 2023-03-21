@@ -1,3 +1,5 @@
+
+
 package model.world;
 
 public abstract class Cell {
@@ -11,3 +13,4 @@ public abstract class Cell {
 		this.isVisible = isVisible;
 	}
 }
+//ahmed was here
