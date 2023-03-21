@@ -13,4 +13,3 @@ public abstract class Cell {
 		this.isVisible = isVisible;
 	}
 }
-//ahmed was here
