@@ -13,3 +13,4 @@ public abstract class Cell {
 		this.isVisible = isVisible;
 	}
 }
+//dell
