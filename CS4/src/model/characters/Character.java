@@ -41,8 +41,11 @@ public abstract class Character {
 	public void setCurrentHp(int currentHp) {
 		if(currentHp < maxHp)
 			this.currentHp=currentHp;
-		else
+		else if(currentHp>=maxHp)
 			this.currentHp=maxHp;
+		else if(currentHp<0)
+			currentHp=0;
+		
 	}
 
 	public void setTarget(Character target) {
