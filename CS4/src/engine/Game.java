@@ -7,8 +7,8 @@ import model.world.Cell;
 
 public class Game {
 	public static ArrayList<Hero> availableHeroes;
-	public static ArrayList<Hero> heroes;
-	public static ArrayList<Zombie> zombies;
+	public static ArrayList<Hero> heroes=new ArrayList<Hero>();
+	public static ArrayList<Zombie> zombies=new ArrayList<Zombie>(10);
 	public static Cell[][] map=new Cell[15][15];
 
 	public static void loadHeroes(String filePath) throws Exception {
@@ -16,7 +16,7 @@ public class Game {
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(filePath));
 			String x = br.readLine();
-			availableHeroes = new ArrayList<Hero>(10);
+			availableHeroes = new ArrayList<Hero>();
 			while (x != null) {
 				String[] parts = x.split(",");
 				String name = parts[0];
